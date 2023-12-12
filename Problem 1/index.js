@@ -3,7 +3,7 @@ let primeNumSum = document.getElementById("primeNumSum");
 let form = document.getElementById("form");
 
 function isPrime(x) {
-  if (x === 1) {
+  if (x === 1 || x === 0) {
     return false;
   } else if (x === 2) {
     return true;
@@ -32,9 +32,8 @@ form.addEventListener("submit", function (event) {
     }
   }
 
-  if (arr != []) {
-    primeNumRange.innerHTML =
-      "Các số nguyên tố trong khoảng từ " + a + " đến " + b + " là: " + arr.join(", ");
+  if (arr.length !== 0) {
+    primeNumRange.innerHTML = "Các số nguyên tố trong khoảng từ " + a + " đến " + b + " là: " + arr.join(", ");
     primeNumSum.innerHTML = "Tổng các số nguyên tố trong khoảng là: " + sum;
   } else {
     primeNumRange.innerHTML =
