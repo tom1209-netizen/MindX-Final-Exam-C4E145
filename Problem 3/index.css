@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.upper-container {
+  margin: 100px 100px 70px 100px;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 24px;
+  font-family: 'Merriweather', serif;;
+}
+
+.nav {
+  display: flex;
+}
+
+.search-container {
+  max-width: 300px;
+  margin-right: auto;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  position: relative; 
+  border: 1px solid #BFC8E6;
+  border-radius: 4px;
+}
+
+.search-input {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  padding-left: 40px;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 16px; 
+}
+
+.search-input::placeholder {
+  font-family: Poppins;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.search-container:focus-within{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4); /* focus shadow */
+}
+
+.icon {
+  position: absolute;
+  left: 10px;
+}
+
+.nav-container {
+  list-style: none;
+  display: flex;
+}
+
+.nav-item {
+  padding: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #849fff;
+}
+
+.nav-item:hover a {
+  color: white;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 16px;
+
+  margin: 0px 100px 100px 100px;
+}
+
+.user-card {
+  position: relative;
+  padding: 24px;
+  background-color: #FBFCFF;
+  border-radius: 16px;
+  min-width: 327px;
+  min-height: 208px;
+}
+
+.user-card:hover {
+  box-shadow: 0px 8px 23px 0px #DAE0F9B2;
+}
+
+.profile {
+  width: 97px;
+  height: 97px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.profile-info {
+  position: absolute;
+  top: 24px;
+  left: 137px;
+}
+
+.name {
+  margin-top: 20px;
+  margin-bottom: 4px;
+  font-size: 18px;
+  font-family: 'Merriweather', serif;
+  font-weight: 900;
+}
+
+.place {
+  margin-bottom: 16px;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px;
+}
+
+.tag {
+  color: #516FD4;
+  padding: 2px 8px 2px 8px;
+  border: 1px solid #BFC8E6;
+  border-radius: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 500;
+}
+
